@@ -173,3 +173,28 @@ tr:nth-child(even){
 .tolak{
     background:red;
 }
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box form{
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+    width:300px;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.search-box button{
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}

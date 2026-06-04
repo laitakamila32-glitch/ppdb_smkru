@@ -104,6 +104,13 @@
 
         </div>
 
+        <div class="search-box">
+            <form method="GET">
+                <input type="text" name="cari" placeholder="Cari nama pendaftar...">
+                <button type="submit">Cari</button>
+            </form>
+        </div>
+
         <div class="table-box">
         <table>
             <h2>Rekapan Data Pendaftar</h2>
@@ -120,7 +127,9 @@
             </tr>
 
         <?php
-            $data = mysqli_query($conn, "SELECT * FROM data_pendaftaran");
+            $cari = $_GET['cari'] ?? '';
+
+            $data = mysqli_query($conn,"SELECT * FROM data_pendaftaran WHERE nama_lengkap LIKE '%$cari%'ORDER BY id DESC");
             while($item = mysqli_fetch_array($data)) {
             ?>
                 
