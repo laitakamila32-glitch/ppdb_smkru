@@ -1,0 +1,87 @@
+/*--tambah user--*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white
+}
+
+.container {
+    background: white;
+    padding: 2.5rem;
+    padding-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgb(97, 127, 163);
+    width: 350px;
+    text-align: center;
+    animation: alternate;
+}
+
+.container h2 {
+    margin-bottom: 1.2rem;
+    color: rgb(45, 69, 90);
+}
+
+.inputform {
+    position: relative;
+    margin-bottom: 1.10rem;
+    padding: 10px;
+}
+
+.inputform input {
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(42, 52, 73);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputform input:focus {
+    border-color: #20334b;
+}
+
+.inputform label {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    color:#172a40;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.inputform input:focus + label,
+.inputform input:valid + label {
+    top: -15px;
+    left: 8px;
+    font-size: 0.8rem;
+    color: #203b55;
+    padding: 0 4px;
+    border-radius: 20px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background: #154469;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #476e9a;
+    transform:translateX(4.5px);
+}

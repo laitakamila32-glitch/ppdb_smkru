@@ -1,0 +1,153 @@
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    background:#f4f6f9;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:220px;
+    background:#1e3a5f;
+    min-height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    color:white;
+    box-shadow:4px 0 15px rgba(0,0,0,.1);
+}
+
+/* HEADER SIDEBAR */
+.sidebar h2{
+    background:#16304f;
+    text-align:center;
+    padding:25px 15px;
+    margin:0;
+    font-size:20px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.sidebar h2 span{
+    display:block;
+    margin-top:5px;
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+/* MENU */
+.sidebar-menu{
+    padding:15px;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size: 15px;
+    color:#dbeafe;
+    text-decoration:none;
+
+    padding:13px 15px;
+    margin-bottom:8px;
+
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar a i{
+    width:20px;
+    text-align:center;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateX(5px);
+}
+
+.sidebar a.active{
+    background:#2563eb;
+    color:white;
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    width:calc(100% - 240px);
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.main h2{
+    color: #1b3860;
+}
+
+/* HEADER */
+.header{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+.header h1{
+    margin:0;
+    color:#1b3860;
+}
+
+.header p{
+    margin-top:5px;
+    color:#777;
+}
+
+.table-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size: 15px;
+}
+
+.table-box{
+    overflow-x:auto;
+}
+
+th{
+    padding:10px 6px;
+}
+
+td{
+    padding:10px 6px;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+.status{
+    padding:6px 12px;
+    border-radius:10px;
+    color:white;
+    font-size:13px;
+    font-weight:500;
+}
+
+.status.diterima{
+    background:#16a34a;
+}
+
+.status.ditolak{
+    background:#dc2626;
+}
+
+.status.menunggu{
+    background:#f59e0b;
+}
