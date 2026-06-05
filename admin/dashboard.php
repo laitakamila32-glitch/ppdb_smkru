@@ -149,7 +149,8 @@
                     <td>
                         <div class="aksi">
                             <a href="edit.php?id=<?= $item['id']; ?>" class="btn edit">Edit</a>
-                            <a href="hapus.php?id=<?= $item['id']; ?>" class="btn hapus">Hapus</a>
+                            <a href="hapus.php?id=<?= $item['id']; ?>" class="btn hapus" 
+                            onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
                         </div>
                     </td>
                 </tr>
