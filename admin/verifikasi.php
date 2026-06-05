@@ -20,7 +20,7 @@
         </h2>
         <div class="sidebar-menu">
             <a href="verifikasi.php" class="active"><i class="fa-solid fa-user-check"></i>Verifikasi Data</a>
-            <a href="dashboard.php"><i class="fa-solid fa-users"></i>dashboard.php</a>
+            <a href="dashboard.php"><i class="fa-solid fa-users"></i>Data Pendaftar</a>
             <a href="../data_siswa/data_siswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a>
             <a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
         </div>
